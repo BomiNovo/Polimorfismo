@@ -1,0 +1,24 @@
+namespace Polimorfismo
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            Gerente gerente = new Gerente();
+            gerente.Nome = "Cleitin";
+            gerente.Salario = 5000;
+
+            Desenvolvedor desenvolvedor = new Desenvolvedor ();
+            desenvolvedor.Nome = "Clodoaldo";
+            desenvolvedor.Salario = 4000;
+
+            Console.WriteLine("Funcionário: " + gerente.Nome);
+            Console.WriteLine("Salário: R$ " + gerente.Salario);
+            Console.WriteLine("Bônus anual: R$ " + gerente.CalcularBonusAnual());
+            Console.WriteLine();
+            Console.WriteLine("Funcionário: " + desenvolvedor.Nome);
+            Console.WriteLine("Salário: R$ " + desenvolvedor.Salario);
+            Console.WriteLine("Bônus anual: R$ " + desenvolvedor.CalcularBonusAnual());
+        }
+    }
+}
